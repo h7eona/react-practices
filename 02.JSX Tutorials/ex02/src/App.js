@@ -10,12 +10,12 @@ function App() {
     );
 }
 
-/*/
+// /*/
 
 // after component App transpiled 
-function App() {
-    return React.createElement('div', null, React.createElement('h2', null, 'Ex02'), React.createElement('p', null, '특징 II: Sigle Root'));
-}
+// function App() {
+//     return React.createElement('div', null, React.createElement('h2', null, 'Ex02'), React.createElement('p', null, '특징 II: Sigle Root'));
+// }
 
 //*/
 
@@ -27,7 +27,7 @@ function App() {
 //     return (    
 //         <h2>Ex02</h2>
 //         <p>특징 II: Sigle Root</p>
-//     )
+//     );
 // }
 //
 // function App() {
