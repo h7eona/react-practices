@@ -6,13 +6,13 @@ function MyComponent({props01, props02, props03, props04, props05, props06, prop
         <div>
             <h2>Property Validation</h2>
 
-            <span>props01: {'-- not set --'}</span>
+            <span>props01: {typeof(props01) === 'undefined' ? props01 : '-- not set --'}</span>
             <br/>
 
-            <span>props02: {'-- not set --'}</span>
+            <span>props02: {typeof(props02) === 'undefined' ? props01 : '-- not set --'}</span>
             <br/>
 
-            <span>props03: {'-- not set --'}</span>
+            <span>props03: {typeof(props03) === 'undefined' ? props01 : '-- not set --'}</span>
             <br/>
 
             <span>props04: {'-- not set --'}</span>
@@ -38,6 +38,12 @@ function MyComponent({props01, props02, props03, props04, props05, props06, prop
 
         </div>
     );
+}
+
+MyComponent.propTypes = {
+    props01: PropTypes.string,
+    props02: PropTypes.number
+
 }
 
 

@@ -1,15 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-function Incrementor02() {
+function Incrementor02({val, step}) {
+    const [count, setCount] = useState(val);
+
     return (
         <div>
-            <button>{'+'}</button>
+            <button 
+                onClick={() =>{
+                    setCount(count + step);
+                }}>
+                {'+'}
+            </button>
             {' '}
-            { 0 }
+            { count }
             {' '}
-            <button>{'-'}</button>
+            <button
+                onClick={() => {
+                    setCount(count - step);
+                }}>
+                {'-'}
+            </button>
         </div>
     );
 }
-
 export default Incrementor02
