@@ -18,6 +18,7 @@
     &:before { 
         display: inline-block; 
         width: 1em; 
+        cursor:pointer;
         content: '▸'; 
     }
 }
